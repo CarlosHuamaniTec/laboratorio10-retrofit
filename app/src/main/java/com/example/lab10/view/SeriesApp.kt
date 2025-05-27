@@ -1,4 +1,4 @@
-package com.tecsup.lab10.view
+package com.example.lab10.view
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.PaddingValues
@@ -28,7 +28,15 @@ import androidx.navigation.NavHostController
 import androidx.navigation.NavType
 import androidx.navigation.navArgument
 import com.example.lab10.data.SerieApiService
+import com.example.lab10.view.ContenidoSerieEditar
+import com.example.lab10.view.ContenidoSerieEliminar
+import com.example.lab10.view.ContenidoSeriesListado
+import com.example.lab10.view.ScreenInicio
 import retrofit2.Retrofit
+import androidx.navigation.compose.rememberNavController
+import androidx.navigation.compose.currentBackStackEntryAsState
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
 import retrofit2.converter.gson.GsonConverterFactory
 
 @Composable
